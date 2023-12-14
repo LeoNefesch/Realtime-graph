@@ -13,7 +13,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'realtime_graph.settings')
 
 from channels.auth import AuthMiddlewareStack
 from channels.routing import ProtocolTypeRouter, URLRouter
-from base.rountings import ws_urlpatterns
+from base.routing import ws_urlpatterns
 
 application = ProtocolTypeRouter({
     'http': get_asgi_application(),
